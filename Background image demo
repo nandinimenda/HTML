@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image Demo</title>
+    <style>
+        body {
+            background-image: url('your-image.jpg'); /* Replace with your image path */
+            background-repeat: repeat-x; /* Repeat horizontally */
+            background-attachment: fixed; /* Fixed position */
+            background-position: center bottom; /* Position halfway down */
+            background-size: auto 50vh; /* Adjust size */
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <h1>Background Image Demo</h1>
+        <p>This page demonstrates a background image fixed halfway down, repeated horizontally, and remaining in place during scrolling.</p>
+    </div>
+
+</body>
+</html>
