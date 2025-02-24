@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Output Methods</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #output {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>JavaScript Output Methods</h1>
+
+    <div class="button-container">
+        <button onclick="showAlert()">Show Alert</button>
+        <button onclick="writeToDocument()">Write to Document</button>
+        <button onclick="logToConsole()">Log to Console</button>
+        <button onclick="updateInnerHTML()">Update Inner HTML</button>
+    </div>
+
+    <p id="output"></p>
+
+    <script>
+        function showAlert() {
+            alert("This is an alert box!");
+        }
+
+        function writeToDocument() {
+            document.write("This text is written using document.write()");
+        }
+
+        function logToConsole() {
+            console.log("This message is logged to the console.");
+        }
+
+        function updateInnerHTML() {
+            document.getElementById("output").innerHTML = "Inner HTML updated!";
+        }
+    </script>
+
+</body>
+</html>
