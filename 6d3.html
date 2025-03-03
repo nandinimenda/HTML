@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Voter Eligibility Check</title>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 50%;
+        margin: 20px auto;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    .not-eligible {
+        color: red;
+        font-weight: bold;
+    }
+    .eligible {
+        color: green;
+        font-weight: bold;
+    }
+    h1 {
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<h1>Voter Eligibility Check</h1>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <td id="name">Ayan</td>
+    </tr>
+    <tr>
+        <th>Age</th>
+        <td id="age">9</td>
+    </tr>
+    <tr>
+        <th>Eligibility</th>
+        <td id="eligibility" class="not-eligible">Not eligible to vote</td>
+    </tr>
+</table>
+
+<script>
+    const name = "Ayan";
+    const age = 9;
+    const eligibilityCell = document.getElementById("eligibility");
+
+    document.getElementById("name").innerText = name;
+    document.getElementById("age").innerText = age;
+
+    if (age >= 18) {
+        eligibilityCell.innerText = "Eligible to vote";
+        eligibilityCell.className = "eligible";
+    } else {
+        eligibilityCell.innerText = "Not eligible to vote";
+        eligibilityCell.className = "not-eligible";
+    }
+</script>
+
+</body>
+</html>
