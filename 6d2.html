@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Age Prompt Example</title>
+</head>
+<body>
+
+<button onclick="askAge()">Enter Your Age</button>
+
+<script>
+function askAge() {
+    const age = prompt("Please enter your age:", "9");
+    if (age !== null) {
+        alert("Your age is " + age + "!");
+    }
+}
+</script>
+
+</body>
+</html>
