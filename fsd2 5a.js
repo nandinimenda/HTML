@@ -1,0 +1,13 @@
+import { createRoot } from 'react-dom/client'
+
+createRoot(document.getElementById('root')).render(
+  <p>Welcome!</p>
+)
+<!doctype html>
+<html lang="en">
+  <body>
+    <div id="root"></div>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
